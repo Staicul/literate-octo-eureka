@@ -1,0 +1,76 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Myriad Pro', Fallback, sans-serif;
+    background: rgb(0, 0, 0);
+}
+
+body, a {
+    color: #f0f2f5;
+}
+
+.container {
+    margin: 20px auto 0;
+}
+
+.header{
+    width: 100%;
+    border: 1px solid #fff;
+    min-height: 42px;
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1168px;
+    }
+}
+
+.logo-heading {
+    height: 42px;
+    margin: 10px 24px 10px 0;
+
+}
+
+.logo-heading img, .logo-heading div {
+    height: 31px;
+    padding: 10px;
+    float: left;
+}
+
+.menu, .menu a {
+    padding: 10px;
+}
+
+.content {
+    padding: 0 50px;
+}
+
+.page-breadcrumb {
+    margin-top: 16px !important;
+}
+
+.page-content {
+    border: 1px solid #fff;
+    padding: 24px;
+    min-height: 280px;
+    margin: 16px 0;
+}

@@ -1,7 +1,12 @@
 {
   "name": "softtwining-app",
   "version": "0.0.1",
+  "description": "Softtwining - Web App",
   "private": true,
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.4.1"
+  },
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "^16.13.1",
@@ -17,6 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "postbuild": "rm -rf ../dist && mkdir \"../dist\" && cp -r build/* ../dist",
+    "heroku-postbuild": "npm run build",
     "eject": "react-scripts eject"
   },
   "browserslist": {

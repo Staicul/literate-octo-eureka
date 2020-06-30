@@ -21,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "rm -rf ../dist && mkdir \"../dist\" && cp -r build/* ../dist",
+    "postbuild": "rm -rf dist && mkdir dist && cp -r build/* dist",
     "heroku-postbuild": "npm run build",
     "eject": "react-scripts eject"
   },

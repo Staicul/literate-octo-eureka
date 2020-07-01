@@ -51,13 +51,15 @@ body, a {
 }
 
 .logo-heading img, .logo-heading div {
-    height: 31px;
     padding: 10px;
     float: left;
+    max-width: 15vw;
 }
 
 .menu, .menu a {
     padding: 10px;
+    text-align: right;
+    text-decoration: none;
 }
 
 .content {
@@ -73,4 +75,17 @@ body, a {
     padding: 24px;
     min-height: 280px;
     margin: 16px 0;
+}
+
+.footer {
+    border: 1px solid #fff;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: block;
 }

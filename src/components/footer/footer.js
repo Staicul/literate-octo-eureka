@@ -3,7 +3,7 @@ import FooterContent from './footer-content';
 
 export default class Footer extends Component {
 
-    footerRows = new FooterContent().FOOTER_ROWS;
+    footerRows = new FooterContent().footerRows;
 
     render() {
         return (

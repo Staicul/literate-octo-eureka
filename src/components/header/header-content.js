@@ -1,5 +1,5 @@
 export default class HeaderContent {
-    NAV_LINKS = [
+    navLinks = [
         {
             link: '/',
             title: 'Home',

@@ -5,7 +5,7 @@ import Logo from './logo'
 
 export default class Header extends Component {
 
-    menuItems = new HeaderContent().NAV_LINKS;
+    menuItems = new HeaderContent().navLinks;
 
     render() {
         return (

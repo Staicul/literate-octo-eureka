@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import { LocalizationContext } from 'localize-react';
+
 import HeaderContent from './header-content';
-import Logo from './logo'
+import Logo from './logo';
 
 export default class Header extends Component {
 
@@ -12,9 +14,11 @@ export default class Header extends Component {
             <div>
                 <Logo />
                 <div className="menu">
-                    {this.menuItems.map((menuItem, index) => <Link key={index} to={menuItem.link}> {menuItem.title} </Link>)}
+                    {this.menuItems.map((menuItem, index) => <Link key={index} to={menuItem.link}> {this.context.translate(menuItem.title)} </Link>)}
                 </div>
             </div>
         )
     }
-}  
+}
+
+Header.contextType = LocalizationContext;

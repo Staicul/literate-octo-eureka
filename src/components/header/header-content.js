@@ -2,28 +2,28 @@ export default class HeaderContent {
     navLinks = [
         {
             link: '/',
-            title: 'Home',
+            title: 'home',
             exact: true,
         },
         {
             link: '/our-vision',
-            title: 'Our Vision',
+            title: 'ourVision',
         },
         {
             link: '/what-we-do',
-            title: 'What are we doing?',
+            title: 'whatWeDo',
         },
         {
             link: '/how-we-work',
-            title: 'How do we work?',
+            title: 'howWeWork',
         },
         {
             link: '/360',
-            title: 'VR 360',
+            title: 'vr360',
         },
         {
             link: '/contact',
-            title: 'Contact',
+            title: 'contact',
         },
     ];
 }

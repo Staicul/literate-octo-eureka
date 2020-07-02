@@ -30,9 +30,6 @@ export default class App extends Component {
         <Router>
           <section>
             <section className="header">
-              {/* <LocalizationConsumer>
-                {({ translate }) => translate('name')}
-              </LocalizationConsumer> */}
               <Header />
             </section>
             <section className="content">

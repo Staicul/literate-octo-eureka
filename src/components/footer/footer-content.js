@@ -1,6 +1,6 @@
 export default class FooterContent {
     footerRows = [
-        'footerRow1',
-        'footerRow2'
+        'footer-row-1',
+        'footer-row-2'
     ];
 }

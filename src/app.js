@@ -9,7 +9,7 @@ import WhatWeDoPage from './components/what-we-do/what-we-do-page';
 import OurVisionPage from './components/vision/our-vision-page';
 import HowWeWorkPage from './components/how-we-work/how-we-work-page';
 import { LocalizationProvider } from 'localize-react';
-import { LANGUAGE, TRANSLATIONS } from './constants'
+import { LANGUAGE, TRANSLATIONS, IS_LOCALIZE_CACHE_DISABLED } from './constants'
 
 export default class App extends Component {
 
@@ -23,7 +23,7 @@ export default class App extends Component {
     // const { title } = this.state;
     return (
       <LocalizationProvider
-        disableCache
+        disableCache={IS_LOCALIZE_CACHE_DISABLED}
         locale={LANGUAGE}
         translations={TRANSLATIONS}
       >

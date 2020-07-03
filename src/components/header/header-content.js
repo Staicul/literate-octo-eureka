@@ -7,15 +7,15 @@ export default class HeaderContent {
         },
         {
             link: '/our-vision',
-            title: 'ourVision',
+            title: 'our-vision',
         },
         {
             link: '/what-we-do',
-            title: 'whatWeDo',
+            title: 'what-we-do',
         },
         {
             link: '/how-we-work',
-            title: 'howWeWork',
+            title: 'how-we-work',
         },
         {
             link: '/360',

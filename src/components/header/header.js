@@ -8,8 +8,8 @@ import Logo from './logo';
 export default class Header extends Component {
 
     menuItems = new HeaderContent().navLinks;
-
     render() {
+        console.log("render header")
         return (
             <div>
                 <Logo />

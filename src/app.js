@@ -8,28 +8,49 @@ import ContactPage from './components/contact/contact-page';
 import WhatWeDoPage from './components/what-we-do/what-we-do-page';
 import OurVisionPage from './components/vision/our-vision-page';
 import HowWeWorkPage from './components/how-we-work/how-we-work-page';
+import Language from './components/language'
 import { LocalizationProvider } from 'localize-react';
-import { LANGUAGE, TRANSLATIONS, IS_LOCALIZE_CACHE_DISABLED } from './constants'
+import { TRANSLATIONS, IS_LOCALIZE_CACHE_DISABLED } from './constants'
 
 export default class App extends Component {
 
-  state = { title: "App title" };
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      title: "App title",
+      language: "EN"
+    };
+
+    this.changeLanguage = this.changeLanguage.bind(this)
+  }
 
   componentDidMount = () => {
     // todo
   };
 
+
+  changeLanguage(language) {
+    // console.log(language)
+    this.setState({
+      language: language
+    }, () => { console.log(this.state) })
+  }
+
   render() {
     // const { title } = this.state;
+    console.log(this.state.language)
+    console.log("render app")
     return (
       <LocalizationProvider
         disableCache={IS_LOCALIZE_CACHE_DISABLED}
-        locale={LANGUAGE}
+        locale={this.state.language}
         translations={TRANSLATIONS}
       >
         <Router>
           <section>
             <section className="header">
+              {/* {console.log(this.state.language)} */}
               <Header />
             </section>
             <section className="content">
@@ -39,6 +60,7 @@ export default class App extends Component {
               <Route exact path="/how-we-work" component={HowWeWorkPage} />
               <Route exact path="/our-vision" component={OurVisionPage} />
               <Route exact path="/what-we-do" component={WhatWeDoPage} />
+              <Language changeLanguage={this.changeLanguage} />
             </section>
             <section className="footer">
               <Footer />

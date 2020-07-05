@@ -1,6 +1,3 @@
-# React softtwining-app
-
-
 ## Install
 - clone git repo
 - npm i

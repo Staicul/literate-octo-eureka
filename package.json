@@ -1,7 +1,7 @@
 {
-  "name": "softtwining-app",
+  "name": "localize-issue",
   "version": "0.0.1",
-  "description": "Softtwining - Web App",
+  "description": "Localize React Issue",
   "private": true,
   "engines": {
     "node": "10.16.3",
